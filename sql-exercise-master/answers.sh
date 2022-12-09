@@ -1,5 +1,5 @@
-Q14: SELECT employees.Name, employees.Company, companies.Date FROM employees,companies WHERE employees.Company = companies.Name;
-
-Q15: SELECT employees.Name FROM companies, employees WHERE employees.Company = companies.Name AND companies.date < 2000;
-
-Q16: SELECT employees.Name FROM employees, companies WHERE employees.Company = companies.Name AND employees.Role='Graphic Designer';
+Q18: SELECT Name FROM students WHERE Points = (SELECT max(Points) FROM students);
+Q19: SELECT avg(Points) FROM students;
+Q20: SELECT count(*) FROM students WHERE Points = 500;
+Q21: SELECT Name FROM students WHERE Name like '%s%';
+Q22: SELECT Name FROM students ORDER BY Points DESC;
